@@ -3,9 +3,6 @@ package com.example.demo.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import jakarta.persistence.*;
-import lombok.Data;
-
 @Data
 @Entity
 @Table(name = "AppUser")

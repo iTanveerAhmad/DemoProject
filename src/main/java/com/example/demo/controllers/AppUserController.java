@@ -12,7 +12,7 @@ import java.util.List;
 public class AppUserController {
 
     @Autowired
-    private AppUserRepository appUserRepository;
+    AppUserRepository appUserRepository;
 
     @GetMapping
     public List<AppUser> getAllUser(){
@@ -20,7 +20,7 @@ public class AppUserController {
     }
 
     @GetMapping("/{id}")
-    public AppUser getUserById(@PathVariable int id){
+    public AppUser getUserById(@PathVariable int id) {
         return appUserRepository.findById(id).orElseThrow(() -> new RuntimeException("User not found"));
     }
 
