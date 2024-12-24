@@ -16,4 +16,7 @@ public class AppUser {
 
     @Column(nullable = false, unique = true)
     private String email;
+    
+    @Column(nullable = false)
+    private String password;
 }
